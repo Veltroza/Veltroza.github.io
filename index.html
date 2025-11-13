@@ -12,3 +12,52 @@
   </body>plus de mises a jour bientot
 </html>
 <img src="ebook1.png.png" alt="Mon eBook" width="300">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mes eBooks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #e63950;
+    }
+
+    /* conteneur pour aligner les images côte à côte */
+    .galerie {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px; /* espace entre les images */
+      margin-top: 20px;
+    }
+
+    .galerie img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .galerie img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Découvrez mes eBooks 📚</h1>
+  <p>Voici mes créations, cliquez pour les découvrir :</p>
+
+  <div class="galerie">
+    <img src="ebook1.png" alt="eBook 1">
+    <img src="ebook2.png" alt="eBook 2">
+  </div>
+</body>
+</html>
