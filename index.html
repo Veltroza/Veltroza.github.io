@@ -98,7 +98,7 @@
   </a>
 
   <!-- Ebook 3 -->
-  <a href="LIEN_VERS_TON_3E_EBOOK" target="_blank">
+  <a href="https://books2read.com/u/bQQkxv" target="_blank">
     <img src="bien manger.png" alt="Bien manger ebook">
   </a>
 
@@ -159,3 +159,60 @@
 
 </body>
 </html>
+<button id="modeToggle" style="
+position:fixed;
+top:15px;
+right:15px;
+padding:10px 15px;
+border-radius:8px;
+border:none;
+cursor:pointer;
+background:#fff;
+">
+🌙 Mode sombre </button>
+
+<script>
+  const body = document.body;
+  const button = document.getElementById("modeToggle");
+
+  // Charger le mode depuis le stockage navigateur
+  if(localStorage.getItem("theme") === "dark"){
+      body.classList.add("dark");
+      button.textContent = "☀️ Mode clair";
+      button.style.background = "#444";
+      button.style.color = "#fff";
+  }
+
+  button.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if(body.classList.contains("dark")){
+      localStorage.setItem("theme", "dark");
+      button.textContent = "☀️ Mode clair";
+      button.style.background = "#444";
+      button.style.color = "#fff";
+    } else {
+      localStorage.setItem("theme", "light");
+      button.textContent = "🌙 Mode sombre";
+      button.style.background = "#fff";
+      button.style.color = "#000";
+    }
+  });
+</script>
+/* Mode sombre automatique */
+.dark {
+background-color: #000;
+color: #fff;
+}
+
+.dark section {
+background: rgba(255,255,255,0.08);
+}
+
+.dark footer {
+background: rgba(255,255,255,0.1);
+}
+
+.dark a {
+color: #ffd900;
+}
