@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -11,14 +12,11 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      color: #fff; /* texte blanc */
-      background-image: url('');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      color: #fff;
+      background-color: #000;
     }
 
-    /* Galerie */
+    /* GALERIE */
     .galerie {
       display: flex;
       justify-content: center;
@@ -28,10 +26,11 @@
     }
 
     .galerie img {
-      width: 250px;
+      width: 180px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       transition: transform 0.2s;
+      cursor: pointer;
     }
 
     .galerie img:hover {
@@ -52,120 +51,97 @@
       margin-top: 40px;
     }
 
-    a { color: #fff; font-weight: bold; }
+    a {
+      color: #ffd900;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Texte SEO discret */
+    .seo-small {
+      font-size: 10px;
+      line-height: 1.3;
+      opacity: 0.6;
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
   </style>
+
 </head>
 
 <body>
 
   <!-- ACCUEIL -->
+
   <section>
-    <h1>📚 Livre numériques gratuits</h1>
-    <p>Bienvenue sur mon site où je partage mes ebooks !</p>
+    <h1>📚 Livres numériques gratuits</h1>
+    <p>Bienvenue sur mon site où je partage mes ebooks écrits par moi-même.</p>
   </section>
 
-  <!-- GALERIE -->
-  <section>
-    <h2>Mes ebooks (images)</h2>
+  <!-- GALERIE DES EBOOKS -->
 
-    <div class="galerie">
-      <img src="Crypto.png" alt="eBook 1">
-      <img src="ebook2.png.png" alt="eBook 2">
-      <img src="bien manger.png" alt="eBook 2">
-    </div>
+  <section>
+    <h2>Mes ebooks</h2>
+
+```
+<div class="galerie">
+
+  <!-- Ebook 1 -->
+  <a href="https://books2read.com/u/4AD6ko" target="_blank">
+    <img src="Crypto.png" alt="Ebook Crypto">
+  </a>
+
+  <!-- Ebook 2 -->
+  <a href="https://books2read.com/u/mdJaQO" target="_blank">
+    <img src="ebook2.png.png" alt="Investir pour débutants">
+  </a>
+
+  <!-- Ebook 3 -->
+  <a href="LIEN_VERS_TON_3E_EBOOK" target="_blank">
+    <img src="bien manger.png" alt="Bien manger ebook">
+  </a>
+
+</div>
+```
+
   </section>
 
   <!-- DESCRIPTION -->
-  <section>
-    <h2>📚 Lien de mes ebooks</h2>
-    <p>Tous mes ebooks sont gratuits.</p>
 
-    <div style="width:200px; margin:auto;">
-      <img src="ebook2.png.png" style="width:100%; border-radius:10px;">
-      <p><strong>Investir pour les débutants</strong></p>
-      <a href="https://books2read.com/u/mdJaQO">📥 Lire / Télécharger</a>
-    </div>
-    <div style="display: inline-block; text-align: center; margin: 10px;">
-    <a="ebook2.pdf" target="_blank">
-        <img src="Crypto.png" alt="eBook 2" style="width:200px; border-radius:10px;">
-    </a>
-    <p><a href="https://books2read.com/u/4AD6ko" ">📘Lire / Télécharger</a></p>
-</div>
-    <div class="ebook-item">
-  <img src="bien manger.png" alt="Titre ebook">
-  <a href="https://books2read.com/u/bQQkxv">Lire l'ebook</a>
-     .ebook-item img {
-width: 150px;
-border-radius: 10px;
-}
- 
-</div>
+  <section>
+    <h2>📚 Télécharger les ebooks</h2>
+    <p>Tous mes ebooks sont gratuits ou à petit prix.</p>
+
+```
+<p><a href="https://books2read.com/u/4AD6ko" target="_blank">📥 Ebook Crypto</a></p>
+<p><a href="https://books2read.com/u/mdJaQO" target="_blank">📥 Investir pour débutants</a></p>
+<p><a href="LIEN_VERS_TON_3E_EBOOK" target="_blank">📥 Bien manger ebook</a></p>
+```
 
   </section>
 
   <!-- A PROPOS -->
+
   <section>
-    <h2>À propos de moi</h2>
-    <p> Mon nom est Lorenzo Berthelot ceci est mon site web pour présenter mes ebooks retrouver les ci dessous  .</p>
+    <h2>À propos</h2>
+    <p>Je suis Lorenzo Berthelot et je publie mes propres ebooks accessibles à tous.</p>
   </section>
 
   <!-- CONTACT -->
+
   <section>
     <h2>📩 Me contacter</h2>
-    <p>Youtube :@Veltroza
-    <ul style="list-style:none; padding:0; color:white;">
-     >
-    </ul>
+    <p>Youtube : @Veltroza</p>
   </section>
 
-  <footer>
-    © 2025 - Lorenzo Berthelot | Tous droits réservés
-  </footer>
+  <!-- SEO TEXTE POUR GOOGLE -->
 
-</body>
-</html>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #fff; /* arrière-plan blanc */
-    color: #000; /* texte noir, change en blanc si tu veux */
-  }
+  <div class="seo-small">
+    <h2>Lire des ebooks gratuits et à petit prix</h2>
+    <p>Bienvenue sur mon site dédié aux ebooks en français. Vous y trouverez des histoires courtes, des romans, des nouvelles et des livres numériques à lire en ligne ou à télécharger en PDF. Mes ebooks sont parfaits pour les adolescents et les jeunes adultes qui aiment la lecture rapide, moderne et accessible.</p>
 
-  section {
-    padding: 40px 20px;
-    background: #fff; /* sections blanches */
-    margin: 0;
-  }
-
-  footer {
-    background: #fff; /* footer blanc */
-    color: #000;
-  }
-
-  a {
-    color: #000; /* liens noirs (ou remplace par #fff si tu veux blanc) */
-  }
-
-  .galerie img {
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: none; /* enlève ombre grise si tu veux un style propre */
-  }
-<style>
-  .seo-small {
-    font-size: 10px;   /* texte visible mais très petit */
-    line-height: 1.3;
-    opacity: 0.7;      /* rendu discret mais lisible */
-  }
-</style>
-
-<div class="seo-small">
-<h2>Lire des ebooks gratuits et à petit prix</h2>
-<p>Bienvenue sur mon site dédié aux ebooks en français. Vous y trouverez des histoires courtes, des romans, des nouvelles et des livres numériques à lire en ligne ou à télécharger en PDF. Mes ebooks sont parfaits pour les adolescents et les jeunes adultes qui aiment la lecture rapide, moderne et accessible.</p>
-
+```
 <p>Chaque ebook est écrit et publié par mes soins, et vous pouvez profiter de plusieurs lectures gratuites ou à petit prix pour soutenir mon travail. Mon objectif est de proposer des histoires simples, immersives et faciles à lire depuis votre téléphone, tablette ou ordinateur.</p>
 
 <h2>Des ebooks accessibles immédiatement</h2>
@@ -173,4 +149,13 @@ border-radius: 10px;
 
 <h2>Ebooks disponibles</h2>
 <p>Découvrez ci-dessous les ebooks actuellement disponibles en téléchargement. D’autres histoires arrivent bientôt !</p>
-</div>
+```
+
+  </div>
+
+  <footer>
+    © 2025 - Lorenzo Berthelot | Tous droits réservés
+  </footer>
+
+</body>
+</html>
